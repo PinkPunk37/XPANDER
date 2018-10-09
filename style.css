@@ -1,0 +1,206 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+/*---FONTS---*/
+p {
+    font-family: 'Raleway:100', sans-serif;
+}
+
+h1 {
+    font-family: 'Roboto:500', sans-serif;
+    font-size: 22px;
+    margin: 10px;
+}
+
+h2 {
+    font-family: 'Raleway:100', sans-serif;
+    font-size: 18px;
+    color: white;
+    margin-top: 1em;
+    margin-left: 0.5em;
+}
+
+/*---GRID---*/
+.grid {
+    display: grid;
+    grid-gap: 0px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 80px 430px 70px 375px 140px 70px 375px 140px 70px 375px 140px 400px;
+}
+
+/*---NAVBAR---*/
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid > .navbar {
+    background-color: #fffe30;
+}
+
+.navbar > img {
+    height: 2em;
+}
+
+/*---HOMESCREEN---*/
+.homescreen {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background-image: url(img/landing%20page%20fade.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.homescreen > img {
+    height: 6em;
+    max-height: 100%;
+    max-width: 100%;
+    margin: 1em;
+}
+
+.homescreen > p > img {
+    height: 1em;
+}
+
+/*---XARTICLE---*/
+.xarticle {
+    display: flex;
+    text-align: left;
+    align-items: flex-end;
+    <br/ > display: flex;
+    <br/ > justify-content: center;
+    <br/ >
+}
+
+.xarticle > img {
+    height: 1.5em;
+    margin-left: 1em;
+}
+
+/*---ART1ORNG---*/
+.art1orng {
+    display: flex;
+    background-color: #fffe30;
+    flex-direction: column;
+}
+
+.art1orng > img {
+    width: 308px;
+    height: 308px;
+    margin-left: 70px;
+}
+
+/*---ART1BLCK---*/
+.art1blck {
+    display: flex;
+    background-color: #000000;
+}
+
+/*---ART2ORNG---*/
+.art2orng {
+    display: flex;
+    background-color: #fffe30;
+    flex-direction: column;
+}
+.art2orng > h1 > img {
+    height: 1em;
+}
+
+.art2orng > img {
+    width: 350px;
+    height: 180px;
+    flex:auto;
+}
+
+/*---ART2BLCK---*/
+.art2blck {
+    display: flex;
+    background-color: #000000;
+}
+
+
+
+/*---ART3ORNG---*/
+.art3orng {
+    display: flex;
+    background-color: #fffe30;
+    flex-direction: column;
+}
+
+.art3orng > h1 > img {
+    height: 1em;
+}
+
+.art3orng > img {
+    width: 300px;
+    height: 300px;
+    margin-left: 40px;
+}
+
+/*---ART3BLCK---*/
+.art3blck {
+    display: flex;
+    background-color: #000000;
+}
+
+/*---FOOTER---*/
+.footer {
+    display: flex;
+    background-color: #fffe30;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    
+}
+
+.footer > img {
+    height: 2em;
+}
+
+/*---Bigger display---*/
+@media screen and (max-width=702px) {
+    .navbar {
+        grid-area: navbar;
+    }
+    
+    .homepage {
+        grid-area: homepage;
+    }
+    
+    .xarticle {
+        grid-area: xarticle;
+    }
+    
+    .art1orng {
+        grid-area: art1orng;
+    }
+    
+    .art1blck {
+        grid-area: art1blck;
+    }
+    
+    .grid {
+    display: grid;
+    grid-gap: 0px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+        ""navbar navbar navbar navbar""
+        "". homepage homepage .""
+        "". xarticle xarticle .""
+        "". art1orng art1orng.""
+        "". art1blck art1blck.""
+        "". xarticle xarticle .""
+        "". art2orng art2orng.""
+        "". art2blck art2blck.""
+        "". xarticle xarticle .""
+        "". art3orng art3orng .""
+        "". art3blck art3blck .""
+        "". footer footer .""
+        
+    grid-template-rows: 80px 430px 70px 375px 140px 70px 375px 140px 70px 375px 140px 400px;}
