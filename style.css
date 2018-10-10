@@ -163,7 +163,7 @@ h2 {
     height: 2em;
 }
 
-/*---Bigger display---*/
+/*---Bigger display (does not work I dont know why)---*/
 @media screen and (max-width=702px) {
     .navbar {
         grid-area: navbar;
